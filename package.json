@@ -42,7 +42,14 @@
         "label": "Veist",
         "path": "./veist.json",
         "uiTheme": "vs-dark"
-      },
+      }
     ]
   },
+  "scripts": {
+    "package": "mkdir -p ./bin && vsce package -o ./bin/omni-owl.vsix",
+    "vsce-publish": "vsce publish"
+  },
+  "devDependencies": {
+    "vsce": "^2.11.0"
+  }
 }

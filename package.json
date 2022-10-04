@@ -1,0 +1,48 @@
+{
+  "name": "veist",
+  "displayName": "Veist",
+  "homepage": "https://github.com/guilhermerodz/vscode-theme-veist",
+  "description": "A dark theme inspired by Vercel & Geist ⚡️",
+  "author": "Guilherme Rodz <gui.rodz.dev@gmail.com>",
+  "publisher": "guilhermerodz",
+  "version": "0.1.0",
+  "engines": {
+    "vscode": "^1.64.0"
+  },
+  "maintainers": [
+    "Guilherme Rodz <gui.rodz.dev@gmail.com>"
+  ],
+  "categories": [
+    "Themes"
+  ],
+  "keywords": [
+    "Theme",
+    "Dark Theme",
+    "Veist",
+    "Vercel",
+    "Geist",
+    "Vivid Colors",
+    "Color Scheme"
+  ],
+  "icon": "icon.png",
+  "galleryBanner": {
+    "color": "#17181A",
+    "theme": "dark"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/guilhermerodz/vscode-theme-veist"
+  },
+  "bugs": {
+    "url": "https://github.com/guilhermerodz/vscode-theme-veist/issues"
+  },
+  "contributes": {
+    "themes": [
+      {
+        "label": "Veist",
+        "path": "./veist.json",
+        "uiTheme": "vs-dark"
+      },
+    ]
+  },
+}

@@ -40,7 +40,7 @@
     "themes": [
       {
         "label": "Veist",
-        "path": "./veist.json",
+        "path": "./themes/veist.json",
         "uiTheme": "vs-dark"
       }
     ]

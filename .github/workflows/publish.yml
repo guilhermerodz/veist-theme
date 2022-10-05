@@ -11,9 +11,7 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: 16
-      - run: npm i -g pnpm
-      # - run: npm ci
-      - run: pnpm i --frozen-lockfile
+      - run: npm ci
       # - name: Publish to Open VSX Registry
       #   uses: HaaLeo/publish-vscode-extension@v1
       #   with:

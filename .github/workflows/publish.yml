@@ -4,8 +4,20 @@ on:
 
 name: Deploy Extension
 jobs:
+  install:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Setup Node.js for NPM
+        uses: actions/setup-node@v1
+        with:
+          node-version: 16
+
+      - name: Install project
+        run: npm ci
+
   checkout:
     runs-on: ubuntu-latest
+    needs: install
     outputs:
       version-has-changed: ${{ steps.check.outputs.changed }}
     steps:
@@ -24,17 +36,9 @@ jobs:
 
   publish:
     runs-on: ubuntu-latest
-    needs: checkout
+    needs: [install, checkout]
     if: needs.checkout.outputs.version-has-changed == 'true'
     steps:
-      - name: Setup Node.js for NPM
-        uses: actions/setup-node@v1
-        with:
-          node-version: 16
-
-      - name: Install project
-        run: npm ci
-
       # - name: Publish to Open VSX Registry
       #   uses: HaaLeo/publish-vscode-extension@v1
       #   with:

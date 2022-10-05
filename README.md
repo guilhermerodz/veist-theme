@@ -20,6 +20,7 @@
   <a href="#install">Install</a> •
   <a href="#team">Team</a> •
   <a href="#preferences-shown-in-the-preview">Imitate Preview</a> •
+  <a href="#color-palette">Color Palette</a> •
   <a href="#license">License</a>
 </p>
 
@@ -41,6 +42,60 @@ The font in the preview image is JetBrains Mono, [available here](https://www.je
 "editor.letterSpacing": 0.4,
 "editor.lineHeight": 2,
 ```
+
+## Color Palette
+
+<table>
+  <tr>
+    <th>Color</th>
+    <th>Hex</th>
+    <th>RGB</th>
+    <th>🎨</th>
+  </tr>
+  <tr>
+    <td>Gray</td>
+    <td>#D32D6C</td>
+    <td>211, 45, 108</td>
+    <td><img src="https://placeholder.pics/svg/20x20/d32d6c" /></td>
+
+  </tr>
+
+  <tr>
+    <td>White</td>
+    <td>#FAFBFC</td>
+    <td>250, 251, 252</td>
+    <td><img src="https://placeholder.pics/svg/20x20/fafbfc" /></td>
+  </tr>
+
+  <tr>
+    <td>Blue</td>
+    <td>#54A6F8</td>
+    <td>84, 166, 248</td>
+    <td><img src="https://placeholder.pics/svg/20x20/54a6f8" /></td>
+  </tr>
+
+  <tr>
+    <td>Green</td>
+    <td>#7CE0C3</td>
+    <td>124, 224, 195</td>
+    <td><img src="https://placeholder.pics/svg/20x20/7ce0c3" /></td>
+  </tr>
+
+  <tr>
+    <td>Gray</td>
+    <td>#888888</td>
+    <td>136, 136, 136</td>
+    <td><img src="https://placeholder.pics/svg/20x20/888888" /></td>
+  </tr>
+
+  <tr>
+    <td>Pink</td>
+    <td>#E43ADE</td>
+    <td>228, 58, 222</td>
+    <td><img src="https://placeholder.pics/svg/20x20/e43ade" /></td>
+  </tr>
+  
+</table>
 
 ## Team
 

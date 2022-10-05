@@ -2,24 +2,10 @@ on:
   push:
     branches: ['master']
 
-name: Deploy Extension
+name: Publish Extension
 jobs:
-  install:
+  publish:
     runs-on: ubuntu-latest
-    steps:
-      - name: Setup Node.js for NPM
-        uses: actions/setup-node@v1
-        with:
-          node-version: 16
-
-      - name: Install project
-        run: npm ci
-
-  checkout:
-    runs-on: ubuntu-latest
-    needs: install
-    outputs:
-      version-has-changed: ${{ steps.check.outputs.changed }}
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
@@ -34,16 +20,23 @@ jobs:
         if: steps.check.outputs.changed == 'true'
         run: 'echo "Version change found! New version: ${{ steps.check.outputs.version }} (${{ steps.check.outputs.type }})"'
 
-  publish:
-    runs-on: ubuntu-latest
-    needs: [install, checkout]
-    if: needs.checkout.outputs.version-has-changed == 'true'
-    steps:
+      - name: Setup Node.js for NPM
+        if: steps.check.outputs.changed == 'true'
+        uses: actions/setup-node@v1
+        with:
+          node-version: 16
+
+      - name: Install project
+        if: steps.check.outputs.changed == 'true'
+        run: npm ci
+
       # - name: Publish to Open VSX Registry
+      #   if: steps.check.outputs.changed == 'true'
       #   uses: HaaLeo/publish-vscode-extension@v1
       #   with:
       #     pat: ${{ secrets.OPEN_VSX_TOKEN }}
       - name: Publish to Visual Studio Marketplace
+        if: steps.check.outputs.changed == 'true'
         uses: HaaLeo/publish-vscode-extension@v1
         with:
           pat: ${{ secrets.VS_MARKETPLACE_TOKEN }}

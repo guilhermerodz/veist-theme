@@ -47,7 +47,7 @@
   },
   "license": "MIT",
   "scripts": {
-    "package": "mkdir -p ./bin && vsce package -o ./bin/omni-owl.vsix",
+    "package": "mkdir -p ./bin && vsce package -o ./bin/veist.vsix",
     "v:publish": "vsce publish"
   },
   "devDependencies": {

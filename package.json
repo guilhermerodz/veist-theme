@@ -47,7 +47,7 @@
   },
   "scripts": {
     "package": "mkdir -p ./bin && vsce package -o ./bin/omni-owl.vsix",
-    "vsce-publish": "vsce publish"
+    "v:publish": "vsce publish"
   },
   "devDependencies": {
     "vsce": "^2.11.0"

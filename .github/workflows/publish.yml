@@ -18,7 +18,7 @@ jobs:
 
       - name: Cancel action if version remains
         if: steps.check.outputs.changed != 'true'
-        uses: styfle/cancel-workflow-action
+        uses: styfle/cancel-workflow-action@0.10.1
 
       - name: Version update detected
         run: 'echo "Version change found! New version: ${{ steps.check.outputs.version }} (${{ steps.check.outputs.type }})"'

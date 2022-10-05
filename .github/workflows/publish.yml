@@ -4,8 +4,10 @@ on:
 
 name: Deploy Extension
 jobs:
-  deploy:
+  checkout:
     runs-on: ubuntu-latest
+    outputs:
+      version-has-changed: ${{ steps.check.outputs.changed }}
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
@@ -16,13 +18,14 @@ jobs:
         uses: EndBug/version-check@v1
         id: check
 
-      - name: Cancel action if version remains
-        if: steps.check.outputs.changed != 'true'
-        uses: styfle/cancel-workflow-action@0.10.1
-
       - name: Version update detected
+        if: steps.check.outputs.changed == 'true'
         run: 'echo "Version change found! New version: ${{ steps.check.outputs.version }} (${{ steps.check.outputs.type }})"'
 
+  publish:
+    runs-on: ubuntu-latest
+    if: needs.deploy.outputs.deploy-status == 'true'
+    steps:
       - name: Setup Node.js for NPM
         uses: actions/setup-node@v1
         with:

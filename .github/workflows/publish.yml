@@ -9,8 +9,6 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
-        with:
-          ref: master
 
       - name: Check version changes
         uses: EndBug/version-check@v1

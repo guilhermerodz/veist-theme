@@ -9,14 +9,16 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
+        with:
+          ref: master
 
       - name: Check version changes
         uses: EndBug/version-check@v1
         id: check
 
       - name: Cancel action if version remains
-        if: steps.check.outputs.changed == 'false'
-        uses: styfle/cancel-workflow-action@0.9.1
+        if: steps.check.outputs.changed != 'true'
+        uses: styfle/cancel-workflow-action
 
       - name: Version update detected
         run: 'echo "Version change found! New version: ${{ steps.check.outputs.version }} (${{ steps.check.outputs.type }})"'

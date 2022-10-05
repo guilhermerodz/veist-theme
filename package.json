@@ -50,6 +50,7 @@
     "vsce-publish": "vsce publish"
   },
   "devDependencies": {
+    "@changesets/cli": "^2.25.0",
     "vsce": "^2.11.0"
   }
 }

@@ -20,6 +20,7 @@
   <a href="#install">Install</a> •
   <a href="#team">Team</a> •
   <a href="#preferences-shown-in-the-preview">Imitate Preview</a> •
+  <a href="#color-palette">Color Palette</a> •
   <a href="#license">License</a>
 </p>
 

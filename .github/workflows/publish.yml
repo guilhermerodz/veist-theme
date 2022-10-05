@@ -14,8 +14,11 @@ jobs:
         uses: EndBug/version-check@v1
         id: check
 
+      - name: Cancel action if version remains
+        if: steps.check.outputs.changed == 'false'
+        uses: styfle/cancel-workflow-action@0.9.1
+
       - name: Version update detected
-        if: steps.check.outputs.changed == 'true'
         run: 'echo "Version change found! New version: ${{ steps.check.outputs.version }} (${{ steps.check.outputs.type }})"'
 
       - name: Setup Node.js for NPM

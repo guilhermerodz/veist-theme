@@ -7,12 +7,11 @@
 </h1>
 
 <p align="center">
-  <strong>Dark theme for Visual Studio Code</strong>
+  <strong>Minimal dark theme inspired by Vercel</strong>
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/PRs-welcome-%23000000.svg" alt="PRs welcome!" />
-
+  <img alt="PRs welcome!" src="https://img.shields.io/badge/PRs-welcome-%23000000.svg"/>
   <img alt="License" src="https://img.shields.io/badge/license-MIT-%23000000">
 </p>
 
@@ -44,6 +43,8 @@ The font in the preview image is JetBrains Mono, [available here](https://www.je
 ```
 
 ## Color Palette
+
+The color palette is the same from [Vercel](https://vercel.com/docs/beginner-sveltekit/reactivity#reactive-assignments) website.
 
 <table>
   <tr>
@@ -101,9 +102,15 @@ The font in the preview image is JetBrains Mono, [available here](https://www.je
 
 It is maintained by the following person(s) and a bunch of [awesome contributors](https://github.com/guilhermerodz/veist-theme/graphs/contributors).
 
-| [![Guilherme Rodz](https://github.com/guilhermerodz.png?size=100)](https://github.com/guilhermerodz) |
-| ---------------------------------------------------------------------------------------------------- |
-| [Guilherme Rodz](https://github.com/guilhermerodz)                                                   |
+<table>
+  <tr>
+    <th><a href="https://github.com/guilhermerodz" target="_blank" rel="noopener noreferrer"><img alt="Guilherme Rodz" src="https://github.com/guilhermerodz.png?size=100""></img></a></th>
+  </tr>
+
+  <tr>
+    <td><a ef="https://github.com/guilhermerodz" target="_blank" rel="noopener noreferrer">Guilherme Rodz</a></td>
+  </tr>
+</table>
 
 ## Disclaimer
 

@@ -5,7 +5,6 @@ on:
 name: Deploy Extension
 jobs:
   deploy:
-    needs: cache-and-install-pnpm
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2

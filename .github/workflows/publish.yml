@@ -24,7 +24,8 @@ jobs:
 
   publish:
     runs-on: ubuntu-latest
-    if: needs.deploy.outputs.deploy-status == 'true'
+    needs: checkout
+    if: needs.checkout.outputs.version-has-changed == 'true'
     steps:
       - name: Setup Node.js for NPM
         uses: actions/setup-node@v1

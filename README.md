@@ -1,6 +1,6 @@
 <h1 align="center">
   <br>
-  <img src="https://github.com/guilhermerodz/vscode-theme-veist/blob/master/icon.png?raw=true" alt="Veist Logo" width="100">
+  <img src="https://github.com/guilhermerodz/veist-theme/blob/master/icon.png?raw=true" alt="Veist Logo" width="100">
   <br>
   Veist for <a href="https://code.visualstudio.com/">Visual Studio Code</a>
   <br>
@@ -44,7 +44,7 @@ The font in the preview image is JetBrains Mono, [available here](https://www.je
 
 ## Team
 
-It is maintained by the following person(s) and a bunch of [awesome contributors](https://github.com/guilhermerodz/vscode-theme-veist/graphs/contributors).
+It is maintained by the following person(s) and a bunch of [awesome contributors](https://github.com/guilhermerodz/veist-theme/graphs/contributors).
 
 | [![Guilherme Rodz](https://github.com/guilhermerodz.png?size=100)](https://github.com/guilhermerodz) |
 | ---------------------------------------------------------------------------------------------------- |

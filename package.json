@@ -1,7 +1,7 @@
 {
   "name": "veist",
   "displayName": "Veist Theme",
-  "homepage": "https://github.com/guilhermerodz/vscode-theme-veist",
+  "homepage": "https://github.com/guilhermerodz/veist-theme",
   "description": "A dark theme inspired by Vercel & Geist ⚡️",
   "author": "Guilherme Rodz <gui.rodz.dev@gmail.com>",
   "publisher": "guilhermerodz",
@@ -31,10 +31,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/guilhermerodz/vscode-theme-veist"
+    "url": "https://github.com/guilhermerodz/veist-theme"
   },
   "bugs": {
-    "url": "https://github.com/guilhermerodz/vscode-theme-veist/issues"
+    "url": "https://github.com/guilhermerodz/veist-theme/issues"
   },
   "contributes": {
     "themes": [

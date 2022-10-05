@@ -11,7 +11,7 @@
 
 If you are a git user, you can install the theme and keep up to date by cloning the repo:
 
-    $ git clone https://github.com/guilhermerodz/vscode-theme-veist ~/.vscode/extensions/theme-veist
+    $ git clone https://github.com/guilhermerodz/veist-theme ~/.vscode/extensions/theme-veist
     $ cd ~/.vscode/extensions/theme-veist
     $ npm install
     $ npm run build

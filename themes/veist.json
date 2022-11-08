@@ -172,7 +172,7 @@
       "name": "js/ts punctuation separator key-value",
       "scope": "punctuation.separator.key-value",
       "settings": {
-        "foreground": "#fafbfc"
+        "foreground": "#d32d6c"
       }
     },
     {
@@ -259,7 +259,7 @@
       "name": "operator logical",
       "scope": "keyword.operator.logical",
       "settings": {
-        "foreground": "#fafbfc"
+        "foreground": "#d32d6c"
       }
     },
     {
@@ -419,7 +419,7 @@
       "name": "keyword.operator",
       "scope": "keyword.operator.arithmetic,keyword.operator.comparison,keyword.operator.decrement,keyword.operator.increment,keyword.operator.relational",
       "settings": {
-        "foreground": "#fafbfc"
+        "foreground": "#d32d6c"
       }
     },
     {
@@ -521,13 +521,6 @@
       }
     },
     {
-      "name": "Compound Assignment Operators js/ts",
-      "scope": "keyword.operator.assignment.compound.js,keyword.operator.assignment.compound.ts",
-      "settings": {
-        "foreground": "#fafbfc"
-      }
-    },
-    {
       "name": "Keywords",
       "scope": "keyword",
       "settings": {
@@ -613,7 +606,7 @@
       "name": "Classes",
       "scope": "support.class, entity.name.type.class",
       "settings": {
-        "foreground": "#fafbfc"
+        "foreground": "#54A6F8"
       }
     },
     {
@@ -701,7 +694,7 @@
       "name": "Support",
       "scope": "support.function",
       "settings": {
-        "foreground": "#fafbfc"
+        "foreground": "#54A6F8"
       }
     },
     {
@@ -829,7 +822,7 @@
       "name": "Units",
       "scope": "keyword.other.unit",
       "settings": {
-        "foreground": "#fafbfc"
+        "foreground": "#d32d6c"
       }
     },
     {
@@ -1052,14 +1045,14 @@
       "name": "[VSCODE-CUSTOM] JSON Property Name",
       "scope": "support.type.property-name.json",
       "settings": {
-        "foreground": "#fafbfc"
+        "foreground": "#d32d6c"
       }
     },
     {
       "name": "[VSCODE-CUSTOM] JSON Punctuation for Property Name",
       "scope": "support.type.property-name.json punctuation",
       "settings": {
-        "foreground": "#fafbfc"
+        "foreground": "#d32d6c"
       }
     },
     {
@@ -1266,6 +1259,13 @@
       }
     },
     {
+      "name": "tsx Class Component",
+      "scope": "support.class.component.tsx",
+      "settings": {
+        "foreground": "#d32d6c"
+      }
+    },
+    {
       "name": "block scope",
       "scope": "block.scope.end,block.scope.begin",
       "settings": {
@@ -1417,7 +1417,7 @@
         "keyword.operator.assignment"
       ],
       "settings": {
-        "foreground": "#fafbfc"
+        "foreground": "#d32d6c"
       }
     },
     {
@@ -1491,7 +1491,14 @@
         "entity.other.attribute-name.pseudo-class"
       ],
       "settings": {
-        "foreground": "#fafbfc"
+        "foreground": "#54a6f8"
+      }
+    },
+    {
+      "name": "",
+      "scope": "punctuation.definition.entity.css",
+      "settings": {
+        "foreground": "#d32d6c"
       }
     },
     {
